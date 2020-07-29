@@ -26,11 +26,21 @@ module.exports = {
 			template: './src/index.html',
 			filename: './index.html'
 		})
-	],
+	], 
 	resolve: {
 		alias: {
-		  Utilities: path.resolve(__dirname, 'src/utilities/'),
-		  Templates: path.resolve(__dirname, 'src/templates/')
+			components: path.resolve(__dirname, 'src/components'),
+			css: path.resolve(__dirname, 'src/css/'),
+			img: path.resolve(__dirname, 'src/img/'),
 		}
-	  }
+	},
+	output: {
+    publicPath: "/"
+	},
+	devServer: {
+		port: 3000,
+		historyApiFallback: {
+			index: 'index.html'
+		}
+	}
 }
