@@ -32,6 +32,7 @@ module.exports = {
 			components: path.resolve(__dirname, 'src/components'),
 			css: path.resolve(__dirname, 'src/css/'),
 			img: path.resolve(__dirname, 'src/img/'),
+			data: path.resolve(__dirname, 'src/data/'),
 		}
 	},
 	output: {
