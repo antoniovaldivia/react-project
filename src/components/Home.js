@@ -22,7 +22,7 @@ const Home = ({timelines, events}) => {
           <li className="masthead-cta">
             <h1>Let's make history together!</h1>
             <p><Link to="/" className="link-dlorean">DLOREAN</Link> is an online tool that lets its users create, collaborate on, and share timelines.</p>
-            <p><a href="#" className="link-cta">Get started</a></p>
+            <p><Link to="/" className="link-cta">Get started</Link></p>
           </li>
         </ul>
       </section>
